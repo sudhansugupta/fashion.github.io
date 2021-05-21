@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav a{
+    font-family: 'Goblin One', cursive !important ;
+    font-size: 18px !important;
+    color: #fb23f8 !important;
+}
+.navbar-nav a:hover {
+    font-family: 'Goblin One', cursive !important ;
+    font-size: 20px !important;
+    color:red !important;
+}
+.carousel-indicators button{
+    border-radius: 50% !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+/* aboutus start */
+.about_us h1{
+    font-family: 'Reggae One', cursive !important;
+}
+/* aboutus end */
+/* product start */
+.grown h5{
+    font-family: 'Reggae One', cursive !important;
+    font-size: 18px;
+}
+.grown p{
+    font-family: 'Dosis', sans-serif !important;
+    font-size: 12px;
+}
+.grown h6{
+    font-family: 'Reggae One', cursive !important;
+    font-size: 14px;
+}
+.grown .btn {
+    font-family: 'Reggae One', cursive !important;
+    font-size: 12px;
+}
+
+
+/* product end */
+
+
+@media (max-width: 768px) {
+
+    .carousel-indicators button{
+        border-radius: 50% !important;
+        height: 10px !important;
+        width: 10px !important;
+    }
+    /* aboutus start */
+    .about_us h1{
+        font-family: 'Reggae One', cursive !important;
+        font-size: 18px !important;
+    }   
+.about_us p{
+    font-size: 10px !important;
+    text-align: center !important;
+}
+/* aboutus end */
