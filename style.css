@@ -41,8 +41,86 @@
     font-size: 12px;
 }
 
+.owl-carousel  .owl-prev{
+    background-image: url(img/pre_arrow.png)    !important;
+    height: 50px !important;
+    width: 50px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 0.5 !important;
+    border-radius: 50% !important;
+}
+.owl-carousel  .owl-next{
+    background-image: url(img/next_arrow.png)    !important;
+    height: 50px !important;
+    width: 50px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 0.5 !important;
+    border-radius: 50% !important;
+}
+.owl-carousel  .owl-prev:hover{
+    opacity: 1 !important;
+}
+.owl-carousel .owl-next:hover{
+    opacity: 1 !important;
+}
 
 /* product end */
+/* gallery start */
+.gallery img{
+    border-radius: 5% !important;
+    border-bottom: 2px solid #fb23f8;
+    border-right: 3px solid #fb23f8;
+    cursor: pointer;
+}
+.contact_details1{
+    display: none;
+}
+.contact_details2{
+    display: none;
+}
+.contact_details3{
+    display: none;
+}
+h1{
+    font-family: 'Reggae One', cursive !important;
+}
+p{
+    font-family: 'Dosis', sans-serif !important;
+    font-size: 12px;
+}
+.footer{
+	height: 270px;
+	background-color: #1a1450;
+}
+.footer_text{
+	padding-top: 60px;
+}
+.footer_text ul{
+	list-style: none;
+}
+.footer_text ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+.btn1{
+	border:2px solid white !important;
+	background-color: transparent;
+	padding: 5px;
+	color: white;
+	border-radius: 5px;
+}
+.email_dec{
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #7e7b99 !important;
+}
+
+.footer_text h3{
+	font-size: 20px;
+}
 
 
 @media (max-width: 768px) {
@@ -62,3 +140,38 @@
     text-align: center !important;
 }
 /* aboutus end */
+/*------------------------------footer start--------------------------------*/
+.footer{
+	height: 280px;
+	background-color: #1a1450;
+}
+.footer_text{
+	padding-top: 30px;
+}
+.footer_text ul{
+	list-style: none;
+}
+.footer_text ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+.btn1{
+	border:2px solid white !important;
+	background-color: transparent;
+	padding: 2px;
+	color: white;
+	border-radius: 5px;
+	width: 55px !important;
+	font-size: 8px !important;
+}
+.email_dec{
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #7e7b99 !important;
+}
+
+.footer_text h3{
+	font-size: 12px;
+}
+/*------------------------------responsive end--------------------------------*/

@@ -18,11 +18,13 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- nav bar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto ">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 text-center mb-lg-0">
+                <ul class="navbar-nav  ms-auto mb-2 text-center mb-lg-0">
                     <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -43,6 +45,9 @@
                         <a class="nav-link" href="#">Gallery</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">contact</a>
                     </li>
@@ -95,6 +100,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <!-- slider end -->
     <!-- about us start -->
     <div class="about_us">
@@ -138,8 +144,25 @@
     <!-- about us end -->
     <div class="container text-center py-3">
         <div class="our_product">
-            <h1>Our Product</h1>
-            <hr >
+            <div class="headline d-flex">
+                <h1 class="text-center">Our Product
+                    <hr>
+                </h1>
+                <div class="selecter ms-auto my-2">
+                    <label for="cars">
+                        <h6>Filters : </h6>
+                    </label>
+                    <select name="cars" id="cars">
+                        <option value="all" class="all">All</option>
+                        <option value="bag" class="bag_11">Bags</option>
+                        <option value="jeans" class="jeans">Jeans</option>
+                        <option value="shirt" class="shirt">Shirt</option>
+                        <option value="shoue" class="shoue">Shoue</option>
+                        <option value="glass" class="glass">Glass</option>
+                    </select>
+                </div>
+
+            </div>
             <p>The fashion market in the UK alone is worth £66bn, according to industry researcher FashionUnited, making
                 it one of the most hotly contested markets in the world. We’ve put together a list of essential features
                 that you should implement on your online store to help beat out your competitors and cement yourself a
@@ -238,560 +261,805 @@
     </div>
     <!-- grown end--->
 
-        <!-- pant start -->
-        <div class="container-fluid pb-3">
-            <h1>Fashionable jeans :</h1>
-            <hr style="width: 70%;" >
-        </div>
-        <div class="grown">
-            <div class="container">
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1499 ₹2,499 80% off</h6>
-                                <p>Size: 32</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
+    <!-- pant start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable jeans :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="jeans">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹799 ₹1,499 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1099 ₹3,999 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹899 ₹2,499 70% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/j3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <!-- pant end--->
-
-         <!-- t-shirt start -->
-         <div class="container-fluid pb-3">
-            <h1>Fashionable T-shirt :</h1>
-            <hr style="width: 70%;" >
-        </div>
-        <div class="grown">
-            <div class="container">
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1499 ₹2,499 80% off</h6>
-                                <p>Size: 32</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹799 ₹1,499 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1099 ₹3,999 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹899 ₹2,499 70% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/s3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <!-- shirt end--->
-
-               <!-- glass start -->
-               <div class="container-fluid pb-3">
-                <h1>Fashionable sunglass :</h1>
-                <hr style="width: 70%;" >
-            </div>
-            <div class="grown">
-                <div class="container">
-                    <div class="owl-carousel owl-theme text-center">
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">slim Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹1499 ₹2,499 80% off</h6>
-                                    <p>Size: 32</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹799 ₹1,499 80% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹1099 ₹3,999 80% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> slim Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹899 ₹2,499 70% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg5.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹999 ₹2,499 60% off</h6>
-                                    <p>Size: 30 </p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/sg6.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹999 ₹2,499 60% off</h6>
-                                    <p>Size: 30 </p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-    
-    
                     </div>
                 </div>
-            </div>
-            <!-- glass end--->
-    
-             <!-- t-shirt start -->
-             <div class="container-fluid pb-3">
-                <h1>Fashionable shoes :</h1>
-                <hr style="width: 70%;" >
-            </div>
-            <div class="grown">
-                <div class="container">
-                    <div class="owl-carousel owl-theme text-center">
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">slim Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹1499 ₹2,499 80% off</h6>
-                                    <p>Size: 32</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹799 ₹1,499 80% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹1099 ₹3,999 80% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> slim Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹899 ₹2,499 70% off</h6>
-                                    <p>Size: 30</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b5.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹999 ₹2,499 60% off</h6>
-                                    <p>Size: 30 </p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="item">
-                            <div class="card" style="">
-                                <img src="img/b3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Jogger Fit</h5>
-                                    <p>color: Blue</p>
-                                    <h6>₹999 ₹2,499 60% off</h6>
-                                    <p>Size: 30 </p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-    
-    
                     </div>
                 </div>
-            </div>
-            <!-- shirt end--->
 
-                   <!-- pant start -->
-        <div class="container-fluid pb-3">
-            <h1>Fashionable sandels :</h1>
-            <hr style="width: 70%;" >
-        </div>
-        <div class="grown">
-            <div class="container">
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1499 ₹2,499 80% off</h6>
-                                <p>Size: 32</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹799 ₹1,499 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1099 ₹3,999 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹899 ₹2,499 70% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/sn6.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-            </div>
-        </div>
-        <!-- pant end--->
 
-         <!-- t-shirt start -->
-         <div class="container-fluid pb-3">
-            <h1>Fashionable watchs :</h1>
-            <hr style="width: 70%;" >
-        </div>
-        <div class="grown">
-            <div class="container">
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1499 ₹2,499 80% off</h6>
-                                <p>Size: 32</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹799 ₹1,499 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹1099 ₹3,999 80% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> slim Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹899 ₹2,499 70% off</h6>
-                                <p>Size: 30</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card" style="">
-                            <img src="img/w6.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"> Jogger Fit</h5>
-                                <p>color: Blue</p>
-                                <h6>₹999 ₹2,499 60% off</h6>
-                                <p>Size: 30 </p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/j3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        <!-- shirt end--->
+    </div>
+    <!-- pant end--->
+
+    <!-- t-shirt start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable T-shirt :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="t-shirt">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/s3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- shirt end--->
+
+    <!-- glass start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable sunglass :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="glass">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sg6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- glass end--->
+
+    <!-- shoes start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable shoes :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="shoes">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/b3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- shoes end--->
+
+    <!-- sandels start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable sandels :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="sandels">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/sn6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- sandels end--->
+
+    <!-- watchs start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable watchs :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="watchs">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/w6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- watchs end--->
+
+    <!-- bags start -->
+    <div class="container-fluid pb-3">
+        <h1>Fashionable Bags :</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div class="bag">
+        <div class="container">
+            <div class="owl-carousel owl-theme text-center">
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1499 ₹2,499 80% off</h6>
+                            <p>Size: 32</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹799 ₹1,499 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹1099 ₹3,999 80% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> slim Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹899 ₹2,499 70% off</h6>
+                            <p>Size: 30</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card" style="">
+                        <img src="img/bg3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jogger Fit</h5>
+                            <p>color: Blue</p>
+                            <h6>₹999 ₹2,499 60% off</h6>
+                            <p>Size: 30 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- bags end--->
+
+    <!-- gallery start -->
+    <div class="container pt-3">
+    <div class="gallery text-center">
+        <h1>Our Gallery</h1><hr>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal1.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal2.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal3.jpg" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal4.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal5.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center pt-3">
+                <img src="img/gal6.jpg" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</div>
+      <!-- gallery end -->
+
+      <!-- our team start -->
+      <div class="container">
+      <div class="our_team text-center">
+          <h1>Our Team</h1> <hr>
+          <p>In any industry where the people behind a company are as important as the company itself, you’re likely to find a kind of expanded “about” page that includes information on individual employees. “Meet the Team” pages are popular among web design and other creative firms, but are also found on sites within various other industries. These pages are a valuable addition to any site where human contact is an important part of the industry. It adds a personal touch to the company and can lend trust to visitors.</p>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto text-center ">
+
+            <div class="card mb-3">
+                <img src="img/team1.jpg" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">co-founder</h5><hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <button type="button" class="btn-primary px-3 py-1 rounded-pill get_contact1"> Contact </button>
+                </div>
+              </div>
+
+              <div class="card contact_details1 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Ms. Tania</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Co-Founder</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-link">phone: 123456789</p>
+                  <p class="card-link">Email: xyz12345@gmail.com</p>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto text-center ">
+
+            <div class="card mb-3">
+                <img src="img/team2.jpg" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Designer</h5><hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <button type="button" class="btn-primary px-3 py-1 rounded-pill get_contact2"> Contact </button>
+                </div>
+              </div>
+
+              <div class="card contact_details2 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Ms. Mithu</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Designer</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-link">phone: 123456789</p>
+                  <p class="card-link">Email: xyz12345@gmail.com</p>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto text-center ">
+
+            <div class="card mb-3">
+                <img src="img/team3.jpg" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sales Manager</h5><hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <button type="button" class="btn-primary px-3 py-1 rounded-pill get_contact3"> Contact </button>
+                </div>
+              </div>
+
+              <div class="card contact_details3 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Ms. Moon</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Sales Manager</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-link">phone: 123456789</p>
+                  <p class="card-link">Email: xyz12345@gmail.com</p>
+                </div>
+              </div>
+
+          </div>
+
+
+      </div>
+      </div>
+        <!-- our team end --> 
+
+        <div class="footer text-white">
+            <div class="container footer_text justify-content-center">
+            <div class="row mx-auto">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-6 mx-auto justify-content-center">
+                <ul>
+                  <li><a href="#"> Privacy Policy </a> </li>
+                  <li><a href="#">Terms & Conditions</a> </li>
+                  <li><a href="#"> We're Hiring </a> </li>
+                  <li><a href="#"> Our Team </a> </li>
+                  <li><a href="#"> FAQ </a></li>
+                  </ul> </div>
+  
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-6 mx-auto justify-content-center">
+                <ul>
+                  <li><a href="#"> Home </a> </li>
+                    <li><a href="#">The Brand Story</a> </li>
+                  <li><a href="#">Our Collections </a> </li>
+                  <li><a href="#"> Franchise </a> </li>
+                  <li><a href="#"> Contact </a> </li>
+                  </ul>
+               </div>
+  
+         <div class="col-lg-4 col-md-4 col-sm-10 col-10 mx-auto ">
+           <h3>Newsletter</h3>
+           <div class="SUBSCRIVE  d-flex">
+             <input type="email" class=" email_dec text-white " id="" placeholder="Enter address">
+  
+  <button type="submit" class=" btn1 ms-2"> SUBSCRIBE </button>
+         </div>
+         </div>
+         <marquee class="pt-2">This website create by Sudhansu Gupta, contact : guptasudhansu84@gmail.com</marquee>
+            </div>
+        </div>
+          </div>
+          </div>
+  
+             <!------------------------------footer end-------------------------------->
 
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -807,7 +1075,7 @@
             loop: true,
             margin: 10,
             nav: true,
-            autoplay:true,
+            autoplay: true,
 
             responsive: {
                 0: {
@@ -822,6 +1090,33 @@
             }
         })
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                alert("this site is under-contraction.");
+            });
+
+            $(".bag_11").click(function(){
+                $(".grown").hide(1000);
+            });
+
+            $(".get_contact1").click(function(){
+                $(".contact_details1").toggle(1000);
+            });
+
+            $(".get_contact2").click(function(){
+                $(".contact_details2").toggle(1000);
+            });
+
+            $(".get_contact3").click(function(){
+                $(".contact_details3").toggle(1000);
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>
