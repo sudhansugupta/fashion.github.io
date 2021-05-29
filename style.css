@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth !important;
+}
 .navbar-nav a{
     font-family: 'Goblin One', cursive !important ;
     font-size: 18px !important;
@@ -124,7 +127,23 @@ p{
 .footer_text h3{
 	font-size: 20px;
 }
-
+/* .navbar{
+    position: fixed !important;
+    z-index: 999 !important;
+    width: 100%;
+    height: auto !important;
+    
+} */
+.offcanvas{
+    background:transparent !important;
+    width: 60% !important;
+}
+.btn-close{
+    background-color: red !important;
+}
+.mobile_view_nav_drop{
+    background: transparent !important;
+}
 
 @media (max-width: 768px) {
 

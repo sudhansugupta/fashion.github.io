@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -17,39 +18,83 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
+    <div id="topp"></div>
     <!-- nav bar start -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto ">
+  
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mx-auto">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">LOGO</a>
+          
+         <!-- //////mobile view nav////// -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  
+                    <ul class="navbar-nav  ms-auto mb-2 text-center mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About us</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Product</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                offer
+                            </a>
+                            <ul class="dropdown-menu mobile_view_nav_drop text-center" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#grown1">up to 30% off</a></li>
+                                <li><a class="dropdown-item" href="#bag_product">up to 40% off</a></li>
+                                <li><a class="dropdown-item" href="#">up to 50% off</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                  </div></div>
+        <!-- ///////////////////desktop view nav//////////////// -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto mb-2 text-center mb-lg-0">
                     <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#about">About us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="#product">Product</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
+                        <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="#contact">contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -57,8 +102,8 @@
                             offer
                         </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">up to 30% off</a></li>
-                            <li><a class="dropdown-item" href="#">up to 40% off</a></li>
+                            <li><a class="dropdown-item" href="#grown1">up to 30% off</a></li>
+                            <li><a class="dropdown-item" href="#bag_product">up to 40% off</a></li>
                             <li><a class="dropdown-item" href="#">up to 50% off</a></li>
                         </ul>
                     </li>
@@ -66,10 +111,13 @@
 
             </div>
         </div>
-    </nav>
+    </nav> 
+   
+
     <!-- nav bar end -->
     <!-- slider start -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+     <div id="slider" class="pt-5">
+    <div id="carouselExampleIndicators" class="carousel slide pt-4" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -100,10 +148,10 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+    </div>
     <!-- slider end -->
     <!-- about us start -->
-    <div class="about_us">
+    <div class="about_us" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-12 mx-auto  my-auto pt-3">
@@ -142,25 +190,29 @@
         </div>
     </div>
     <!-- about us end -->
+    <div id="product">
     <div class="container text-center py-3">
         <div class="our_product">
             <div class="headline d-flex">
                 <h1 class="text-center">Our Product
                     <hr>
                 </h1>
-                <div class="selecter ms-auto my-2">
-                    <label for="cars">
-                        <h6>Filters : </h6>
-                    </label>
-                    <select name="cars" id="cars">
-                        <option value="all" class="all">All</option>
-                        <option value="bag" class="bag_11">Bags</option>
-                        <option value="jeans" class="jeans">Jeans</option>
-                        <option value="shirt" class="shirt">Shirt</option>
-                        <option value="shoue" class="shoue">Shoue</option>
-                        <option value="glass" class="glass">Glass</option>
-                    </select>
-                </div>
+        <!-- Example single danger button -->
+<div class="btn-group ms-auto">
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      filter:
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#all_product">all Product</a></li>
+      <li><a class="dropdown-item" href="#Grown">Grown</a></li>
+      <li><a class="dropdown-item" href="#jeans">jeans</a></li>
+      <li><a class="dropdown-item" href="#T-shirt">T-shirt</a></li>
+      <li><a class="dropdown-item" href="#sunglass">sunglass</a></li>
+      <li><a class="dropdown-item" href="#sandels">sandels</a></li>
+      <li><a class="dropdown-item" href="#watchs">watchs</a></li>
+      <li><a class="dropdown-item" href="#Bags">Bags</a></li>
+    </ul>
+  </div>
 
             </div>
             <p>The fashion market in the UK alone is worth £66bn, according to industry researcher FashionUnited, making
@@ -169,8 +221,10 @@
                 spot at the top of the clothing food chain.</p>
         </div>
     </div>
+    <div id="all_product">
     <!-- grown start -->
-    <div class="container-fluid pb-3">
+    <div id="grown">
+    <div class="container-fluid pb-3>
         <h1>Fashionable Grown :</h1>
         <hr style="width: 70%;">
     </div>
@@ -178,7 +232,7 @@
         <div class="container">
             <div class="owl-carousel owl-theme text-center">
                 <div class="item">
-                    <div class="card" style="">
+                    <div class="card">
                         <img src="img/f1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Anarkali Gown</h5>
@@ -191,7 +245,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="card" style="">
+                    <div class="card">
                         <img src="img/f2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"> Anarkali Gown</h5>
@@ -259,9 +313,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- grown end--->
 
     <!-- pant start -->
+    <div id="jeans">
     <div class="container-fluid pb-3">
         <h1>Fashionable jeans :</h1>
         <hr style="width: 70%;">
@@ -351,9 +407,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- pant end--->
 
     <!-- t-shirt start -->
+    <div id="T-shirt">
     <div class="container-fluid pb-3">
         <h1>Fashionable T-shirt :</h1>
         <hr style="width: 70%;">
@@ -443,9 +501,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- shirt end--->
 
     <!-- glass start -->
+    <div id="sunglass">
     <div class="container-fluid pb-3">
         <h1>Fashionable sunglass :</h1>
         <hr style="width: 70%;">
@@ -535,9 +595,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- glass end--->
 
     <!-- shoes start -->
+    <div id="shoes">
     <div class="container-fluid pb-3">
         <h1>Fashionable shoes :</h1>
         <hr style="width: 70%;">
@@ -627,9 +689,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- shoes end--->
 
     <!-- sandels start -->
+    <div id="sandels">
     <div class="container-fluid pb-3">
         <h1>Fashionable sandels :</h1>
         <hr style="width: 70%;">
@@ -719,9 +783,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- sandels end--->
 
     <!-- watchs start -->
+    <div id="watchs">
     <div class="container-fluid pb-3">
         <h1>Fashionable watchs :</h1>
         <hr style="width: 70%;">
@@ -811,9 +877,11 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- watchs end--->
 
     <!-- bags start -->
+    <div id="bag">
     <div class="container-fluid pb-3">
         <h1>Fashionable Bags :</h1>
         <hr style="width: 70%;">
@@ -903,9 +971,12 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
     <!-- bags end--->
 
     <!-- gallery start -->
+    <div id="gallery">
     <div class="container pt-3">
     <div class="gallery text-center">
         <h1>Our Gallery</h1><hr>
@@ -935,9 +1006,12 @@
 
     </div>
 </div>
+</div>
       <!-- gallery end -->
+    </div>
 
       <!-- our team start -->
+      <div id="contact">
       <div class="container">
       <div class="our_team text-center">
           <h1>Our Team</h1> <hr>
@@ -1017,6 +1091,7 @@
 
       </div>
       </div>
+      </div>
         <!-- our team end --> 
 
         <div class="footer text-white">
@@ -1056,9 +1131,27 @@
           </div>
   
              <!------------------------------footer end-------------------------------->
+   
+          <a href="#topp"> <button type="button" class="btn btn-warning fixed-bottom ms-auto me-4 d-flex mb-5  rounded-pill">Back To Top
+          </button></href>
 
 
-    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -1093,13 +1186,13 @@
 
     <script>
         $(document).ready(function () {
-            $(".btn").click(function () {
-                alert("this site is under-contraction.");
-            });
+            // $(".btn").click(function () {
+            //     alert("this site is under-contraction.");
+            // });
 
-            $(".bag_11").click(function(){
-                $(".grown").hide(1000);
-            });
+            // $("#bag").click(function(){
+            //     $(".grown").hide(1000);
+            // });
 
             $(".get_contact1").click(function(){
                 $(".contact_details1").toggle(1000);
@@ -1112,10 +1205,8 @@
             $(".get_contact3").click(function(){
                 $(".contact_details3").toggle(1000);
             });
-
         });
     </script>
-
 
 </body>
 
