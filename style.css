@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth !important;
 }
@@ -25,7 +26,10 @@ html{
 .textareaaa h1 span{
     color:blue;
 }
-
+.textareaaa h1{
+    color:blue;
+    font-size: 25px;
+}
 
 
 /* aboutus start */
@@ -164,7 +168,8 @@ p{
     }
     .textareaaa h1{
         color:blue;
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: 600;
     }
     /* aboutus start */
     .about_us h1{
@@ -211,3 +216,4 @@ p{
 	font-size: 12px;
 }
 /*------------------------------responsive end--------------------------------*/
+}
