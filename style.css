@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth !important;
+    scroll-behavior: auto !important;
 }
 .navbar-nav a{
     font-family:Arial, Helvetica, sans-serif !important ;
@@ -159,6 +160,7 @@ p{
     display: none;
    
 }
+
 @media (max-width: 768px) {
 
     .carousel-indicators button{

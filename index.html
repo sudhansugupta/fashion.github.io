@@ -24,11 +24,15 @@
     <!-- type.js  -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script> -->
     <script src="typed.js"></script>
-    
+
 </head>
 <title>fashion world</title>
+
 <body>
+    
+
     <div id="topp"></div>
+
     <!-- nav bar start -->
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mx-auto">
@@ -123,8 +127,7 @@
 
 
     <!-- nav bar end -->
-
-    <!-- slider start -->
+ <!-- slider start -->
     <div id="slider" class="pt-5">
         <div id="carouselExampleIndicators" class="carousel slide pt-4" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -1171,10 +1174,18 @@
     </div>
 
     <!------------------------------footer end-------------------------------->
-<div id="xxxx">
-    <a href="#topp"> <button type="button"
-            class="btn btn-warning fixed-bottom ms-auto me-4 d-flex mb-5  rounded-pill bbbbb">Go To Top
-        </button></href>
+    <div id="xxxx">
+        <a href="#topp"> <button type="button"
+                class="btn btn-warning fixed-bottom ms-auto me-4 d-flex mb-5  rounded-pill bbbbb">Go To Top
+            </button></href>
+    </div>
+
+
+
+    <div id="yyy">
+    <div class="progress fixed-bottom">
+        <div class="progress-bar progress-bar-striped bg-danger"id="progress-bar"  role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
     </div>
 
 
@@ -1185,113 +1196,121 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <!-- Compiled and minified JavaScript -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ---------owl carasol-------- -->
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-            <!-- ---------owl carasol-------- -->
-        <script type="text/javascript">
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                autoplay: true,
-
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
                 }
+            }
 
 
-            })
-        </script>
-            <!-- ------------contact details------------- -->
-        <script>
-            $(document).ready(function () {
-                // $(".btn").click(function () {
-                //     alert("this site is under-contraction.");
-                // });
+        })
+    </script>
+    <!-- ------------contact details------------- -->
+    <script>
+        $(document).ready(function () {
+            // $(".btn").click(function () {
+            //     alert("this site is under-contraction.");
+            // });
 
-                // $("#bag").click(function(){
-                //     $(".grown").hide(1000);
-                // });
+            // $("#bag").click(function(){
+            //     $(".grown").hide(1000);
+            // });
 
-                $(".get_contact1").click(function () {
-                    $(".contact_details1").toggle(1000);
-                });
+            $(".get_contact1").click(function () {
+                $(".contact_details1").toggle(1000);
+            });
 
-                $(".get_contact2").click(function () {
-                    $(".contact_details2").toggle(1000);
-                });
+            $(".get_contact2").click(function () {
+                $(".contact_details2").toggle(1000);
+            });
 
-                $(".get_contact3").click(function () {
-                    $(".contact_details3").toggle(1000);
-                });
-                // div hide
-                // $(window).scroll(function () {
-                //     $(".bbbbb").css("opacity", 0 +
-                //         $(window).scrollTop() / 100);
-                // });
+            $(".get_contact3").click(function () {
+                $(".contact_details3").toggle(1000);
+            });
+            // div hide
+            // $(window).scroll(function () {
+            //     $(".bbbbb").css("opacity", 0 +
+            //         $(window).scrollTop() / 100);
+            // });
 
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 300)
-                {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 300) {
                     $("#xxxx").show();
                 }
-            else
-                {
+                else {
                     $("#xxxx").hide();
                 }
-                
+
             })
 
             // $(".bbbbb").click(function(){
             //     $("#topp").animate({scrollTop:0},2000);
             // });
 
-            });
-        </script>
-        <!-- //////////////////typed.js////////////////// -->
-        <script>
-            var typed = new Typed('.typed', {
-                strings: ["Fashionable shirt", "stylish jeans",
-                    "Fashionable bags", "stylish shoe", "Fashionable glass", "lots more product"],
-                typeSpeed: 100,
-                backSpeed: 50,
-                loop: true,
-            });
+        });
+    </script>
+    <!-- //////////////////typed.js////////////////// -->
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ["Fashionable shirt", "stylish jeans",
+                "Fashionable bags", "stylish shoe", "Fashionable glass", "lots more product"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
 
-        </script>
-        <!-- alart -->
-        <script>
-            $(".bbbbb").click(function(){
-                // document.write("we will get back soon");
-                alert("Wants To Go top");
-            })
-        </script>
+    </script>
+    <!-- alart -->
+    <script>
+        $(".bbbbb").click(function () {
+            // document.write("we will get back soon");
+            alert("Wants To Go top");
+        })
+    </script>
+    <!-- ---------auto progress bar------- -->
+    <script>
+        window.onscroll = function () {
+            progress()
+        }
+
+        function progress() {
+            let windowScroll = document.body.scrollTop || document.documentElement.scrollTop
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (windowScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + "%";
+        }
+    </script>
 </body>
 
 </html>
