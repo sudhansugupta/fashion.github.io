@@ -248,7 +248,7 @@
         <div id="all_product">
             <!-- grown start -->
             <div id="grown">
-                <div class="container-fluid pb-3>
+                <div class="container-fluid pb-3">
         <h1>Fashionable Grown :</h1>
         <hr style=" width: 70%;">
                 </div>
@@ -997,15 +997,16 @@
                 </div>
             </div>
         </div>
-    </div>
     <!-- bags end--->
-
+    </div>
     <!-- gallery start -->
     <div id="gallery">
         <div class="container pt-3">
             <div class="gallery text-center ">
                 <h1 class="gallery_pop">Our Gallery</h1>
                 <hr>
+                </div>
+
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto justify-content-center gal_1 pt-3">
                         <img src="img/gal1.jpg" class="img-fluid  ">
@@ -1029,8 +1030,6 @@
                         <img src="img/gal6.jpg" class="img-fluid">
                     </div>
                 </div>
-
-            </div>
         </div>
     </div>
     <!-- gallery end -->
@@ -1174,7 +1173,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!------------------------------footer end-------------------------------->
     <div id="xxxx">
@@ -1316,7 +1314,8 @@
         }
     </script>
     <!-- ////////////////// waypoint start///////////////////////////// -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $(document).ready(function () {
@@ -1333,78 +1332,79 @@
             });
             //    gallery
             $('.gal_1').waypoint(function (direction) {
-                $('.gal_1').addClass('animated backInLeft')
+                $('.gal_1').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
 
             $('.gal_2').waypoint(function (direction) {
-                $('.gal_2').addClass('animated backInDown')
+                $('.gal_2').addClass('animated fadeInUpBig')
             }, {
                 offset: '75%'
             });
 
             $('.gal_3').waypoint(function (direction) {
-                $('.gal_3').addClass('animated backInRight')
+                $('.gal_3').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
 
             $('.gal_4').waypoint(function (direction) {
-                $('.gal_4').addClass('animated backInLeft')
+                $('.gal_4').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
 
             $('.gal_5').waypoint(function (direction) {
-                $('.gal_5').addClass('animated backInUp')
+                $('.gal_5').addClass('animated fadeInUpBig')
             }, {
                 offset: '75%'
             });
 
             $('.gal_6').waypoint(function (direction) {
-                $('.gal_6').addClass('animated backInRight')
+                $('.gal_6').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
             // contact/our team
             $('.cont_1').waypoint(function (direction) {
-                $('.cont_1').addClass('animated backInLeft')
+                $('.cont_1').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
 
             $('.cont_2').waypoint(function (direction) {
-                $('.cont_2').addClass('animated backInDown')
+                $('.cont_2').addClass('animated fadeInUpBig')
             }, {
                 offset: '75%'
             });
 
             $('.cont_33').waypoint(function (direction) {
-                $('.cont_33').addClass('animated backInRight')
+                $('.cont_33').addClass('animated fadeInDownBig')
             }, {
                 offset: '75%'
             });
                     // headline
             $('.our_team').waypoint(function (direction) {
-                $('.our_team').addClass('animated heartBeat')
+                $('.our_team').addClass('animated fadeInDownBig')
             }, {
                 offset: '55%'
             });
 
             $('.gallery_pop').waypoint(function (direction) {
-                $('.gallery_pop').addClass('animated heartBeat')
+                $('.gallery_pop').addClass('animated fadeInDownBig')
             }, {
                 offset: '55%'
             });
 
             $('.about_pop').waypoint(function (direction) {
-                $('.about_pop').addClass('animated heartBeat')
+                $('.about_pop').addClass('animated fadeInDownBig')
             }, {
                 offset: '55%'
             });
 
         })
+        
     </script>
 
 </body>

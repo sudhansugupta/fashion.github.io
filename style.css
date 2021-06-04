@@ -7,6 +7,7 @@
 html{
     scroll-behavior: smooth !important;
     scroll-behavior: auto !important;
+    /* position: relative !important; */
 }
 .navbar-nav a{
     font-family:Arial, Helvetica, sans-serif !important ;
@@ -162,7 +163,7 @@ p{
    
 }
  /* ////////////////// waypoint start/////////////////////////////  */
- .about__part1, .about__part2, .gal_1, .gal_2, .gal_3, .gal_4, .gal_5, .gal_6, .cont_1, .cont_2, .cont_33, .our_team, .gallery_pop,.about_pop {
+ .about__part1, .about__part2, .gal_1, .gal_2, .gal_3, .gal_4, .gal_5, .gal_6, .cont_1, .cont_2, .cont_33,      .our_team, .gallery_pop, .about_pop {
      opacity: 0;
  }
 
