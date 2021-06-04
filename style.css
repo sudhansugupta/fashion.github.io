@@ -161,13 +161,12 @@ p{
     display: none;
    
 }
-h1{}
  /* ////////////////// waypoint start/////////////////////////////  */
- .about__part1, .about__part2, .gal_1, .gal_2, .gal_3, .gal_4, .gal_5, .gal_6, .cont_1, .cont_2, .cont_3, .our_team, .gallery_pop,.about_pop {
+ .about__part1, .about__part2, .gal_1, .gal_2, .gal_3, .gal_4, .gal_5, .gal_6, .cont_1, .cont_2, .cont_33, .our_team, .gallery_pop,.about_pop {
      opacity: 0;
  }
 
- .about__part1.animated, .about__part2.animated, .gal_1.animated, .gal_2.animated, .gal_3.animated, .gal_4.animated, .gal_5.animated, .gal_6.animated,.cont_1.animated, .cont_2.animated, .cont_3.animated, .our_team.animated, .gallery_pop.animated, .about_pop.animated{
+ .about__part1.animated, .about__part2.animated, .gal_1.animated, .gal_2.animated, .gal_3.animated, .gal_4.animated, .gal_5.animated, .gal_6.animated,.cont_1.animated, .cont_2.animated, .cont_33.animated, .our_team.animated, .gallery_pop.animated, .about_pop.animated{
      opacity: 1;
  }
 
